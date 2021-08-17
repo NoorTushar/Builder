@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+/* 
+font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+header {
+  padding: 20px;
+}
+
+.header-language {
+  text-align: right;
+}
+
+.header-icons li {
+  list-style: none;
+}
+
+.header-icons li a {
+  color: #cfd2d6;
+  margin-right: 15px;
+}
+.header-icons li a i {
+  font-size: 14px;
+}
+
+.btn-secondary {
+  height: 30px;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  padding-left: 19px;
+  padding-right: 19px;
+  color: #777;
+  background: #f9f9ff;
+  margin-right: 5px;
+}
+
+.dropdown button {
+  line-height: 28px;
+  border: 1px solid #fab700;
+  background: #fab700;
+  padding: 0 19px;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  -webkit-transition: all 300ms linear 0s;
+  -o-transition: all 300ms linear 0s;
+  transition: all 300ms linear 0s;
+
+  border-radius: 3px;
+}
+
+header .navbar-nav li a {
+  font: 500 12px "Poppins", sans-serif;
+  text-transform: uppercase;
+  color: #222;
+  margin-right: 35px;
+}
+
+header .navbar-collapse form {
+  align-items: center;
+}
+
+/* banner section starts */
+
+.banner {
+  width: 100%;
+  background-image: url("../img/xhome-banner.png");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.banner h1 {
+  font-size: 60px;
+  font-family: "Oswald", sans-serif;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.banner span {
+  background: #fab700;
+  border-radius: 4px;
+  margin: 0;
+  color: #222;
+
+  padding: 0 5px;
+  display: inline-block;
+}
+
+.banner p {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  color: white;
+  padding: 0px 30px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.banner button {
+  border: none;
+  padding: 0 44px;
+  line-height: 50px;
+  background: #222;
+  color: #fab700;
+  display: inline-block;
+  border-radius: 5px;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  -webkit-transition: all 300ms linear 0s;
+  -o-transition: all 300ms linear 0s;
+  transition: all 300ms linear 0s;
+}
+/* banner section ends */
+
+/* services starts */
+
+.services {
+  width: 100%;
+  padding-top: 124px;
+  padding-bottom: 60px;
+}
+
+.services-texts {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.services-texts h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  color: #222;
+  margin-bottom: 12px;
+}
+.services-texts p {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  line-height: 24px;
+  color: #777;
+  margin-bottom: 0;
+}
+
+.service-items {
+  text-align: center;
+  padding: 45px 55px;
+  border-radius: 10px;
+  justify-content: space-evenly;
+}
+
+.service-box {
+  transition: 0.5s;
+  padding: 40px 32px;
+  border-radius: 10px;
+}
+
+.service-box img {
+  margin-bottom: 23px;
+}
+.service-box h4 {
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  color: #222;
+  margin-bottom: 18px;
+}
+.service-box p {
+  font-size: 14px;
+  color: #777777;
+  line-height: 24px;
+  font-family: "Roboto", sans-serif;
+}
+
+.service-box:hover {
+  transition: 0.5s;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+/* service ends */
+
+/* portfolio starts*/
+.portfolio-section {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.portfolio-texts {
+  text-align: center;
+  margin-bottom: 75px;
+}
+.portfolio-texts h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  color: #222;
+  margin-bottom: 12px;
+}
+.portfolio-texts p {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  line-height: 24px;
+  color: #777;
+  margin-bottom: 0;
+}
+
+.gallery-items {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.g-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+}
+
+.g-item::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.5s;
+}
+
+.g-item:hover::before {
+  position: absolute;
+  content: "";
+  background: rgba(250, 183, 0, 0.85);
+  top: 0;
+  left: 0
+  transition: 0.5s;
+}
+
+.g-item img {
+}
+.g-item-texts {
+  position: absolute;
+  text-align: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+.g-item:hover .g-item-texts {
+  opacity: 1; 
+  transition: 0.5s;
+}
+.g-item-texts h4 {
+  color: #222;
+  font-size: 2vw;
+  padding-bottom: 1vw;
+  -webkit-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+  opacity: .8;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+}
+.g-item-texts p {
+  font-size: 1vw;
+  font-family: "Roboto", sans-serif;
+  color: #222;
+  margin: 0;
+  opacity: .8;
+}
+/* portfolio ends*/
